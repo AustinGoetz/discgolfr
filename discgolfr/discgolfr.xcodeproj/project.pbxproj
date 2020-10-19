@@ -12,10 +12,11 @@
 		2ADCFF9E253D1FA300D4A267 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ADCFF9C253D1FA300D4A267 /* Main.storyboard */; };
 		2ADCFFA0253D1FA600D4A267 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADCFF9F253D1FA600D4A267 /* Assets.xcassets */; };
 		2ADCFFA3253D1FA600D4A267 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ADCFFA1253D1FA600D4A267 /* LaunchScreen.storyboard */; };
-		2ADCFFB3253D289800D4A267 /* Scorecard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFFB2253D289800D4A267 /* Scorecard.swift */; };
-		2ADCFFB9253D299900D4A267 /* ScorecardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFFB8253D299900D4A267 /* ScorecardController.swift */; };
-		2ADCFFBD253D2ACC00D4A267 /* ScorecardListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFFBC253D2ACC00D4A267 /* ScorecardListTableViewController.swift */; };
-		2ADCFFC1253D2CB500D4A267 /* StartRoundTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFFC0253D2CB500D4A267 /* StartRoundTableViewController.swift */; };
+		2ADCFFE1253D4CD100D4A267 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFFE0253D4CD100D4A267 /* User.swift */; };
+		2ADCFFE4253D4D1700D4A267 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFFE3253D4D1700D4A267 /* UserController.swift */; };
+		2ADCFFF1253D61F000D4A267 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFFF0253D61EF00D4A267 /* LogInViewController.swift */; };
+		2ADCFFF4253D63F500D4A267 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFFF3253D63F500D4A267 /* HomeViewController.swift */; };
+		2ADCFFF7253D672600D4A267 /* Scorecard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFFF6253D672600D4A267 /* Scorecard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +27,11 @@
 		2ADCFF9F253D1FA600D4A267 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2ADCFFA2253D1FA600D4A267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2ADCFFA4253D1FA600D4A267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2ADCFFB2253D289800D4A267 /* Scorecard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scorecard.swift; sourceTree = "<group>"; };
-		2ADCFFB8253D299900D4A267 /* ScorecardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorecardController.swift; sourceTree = "<group>"; };
-		2ADCFFBC253D2ACC00D4A267 /* ScorecardListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorecardListTableViewController.swift; sourceTree = "<group>"; };
-		2ADCFFC0253D2CB500D4A267 /* StartRoundTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartRoundTableViewController.swift; sourceTree = "<group>"; };
+		2ADCFFE0253D4CD100D4A267 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2ADCFFE3253D4D1700D4A267 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		2ADCFFF0253D61EF00D4A267 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		2ADCFFF3253D63F500D4A267 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2ADCFFF6253D672600D4A267 /* Scorecard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scorecard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +103,8 @@
 		2ADCFFB1253D287C00D4A267 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2ADCFFB2253D289800D4A267 /* Scorecard.swift */,
+				2ADCFFE0253D4CD100D4A267 /* User.swift */,
+				2ADCFFF6253D672600D4A267 /* Scorecard.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -118,7 +121,7 @@
 		2ADCFFB7253D298300D4A267 /* ModelControllers */ = {
 			isa = PBXGroup;
 			children = (
-				2ADCFFB8253D299900D4A267 /* ScorecardController.swift */,
+				2ADCFFE3253D4D1700D4A267 /* UserController.swift */,
 			);
 			path = ModelControllers;
 			sourceTree = "<group>";
@@ -126,8 +129,8 @@
 		2ADCFFBB253D2ABA00D4A267 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				2ADCFFBC253D2ACC00D4A267 /* ScorecardListTableViewController.swift */,
-				2ADCFFC0253D2CB500D4A267 /* StartRoundTableViewController.swift */,
+				2ADCFFF0253D61EF00D4A267 /* LogInViewController.swift */,
+				2ADCFFF3253D63F500D4A267 /* HomeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -202,12 +205,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2ADCFFB3253D289800D4A267 /* Scorecard.swift in Sources */,
 				2ADCFF97253D1FA300D4A267 /* AppDelegate.swift in Sources */,
-				2ADCFFB9253D299900D4A267 /* ScorecardController.swift in Sources */,
-				2ADCFFC1253D2CB500D4A267 /* StartRoundTableViewController.swift in Sources */,
-				2ADCFFBD253D2ACC00D4A267 /* ScorecardListTableViewController.swift in Sources */,
 				2ADCFF99253D1FA300D4A267 /* SceneDelegate.swift in Sources */,
+				2ADCFFE4253D4D1700D4A267 /* UserController.swift in Sources */,
+				2ADCFFF1253D61F000D4A267 /* LogInViewController.swift in Sources */,
+				2ADCFFE1253D4CD100D4A267 /* User.swift in Sources */,
+				2ADCFFF4253D63F500D4A267 /* HomeViewController.swift in Sources */,
+				2ADCFFF7253D672600D4A267 /* Scorecard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

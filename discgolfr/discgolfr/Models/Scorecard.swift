@@ -2,25 +2,21 @@
 //  Scorecard.swift
 //  discgolfr
 //
-//  Created by Austin Goetz on 10/18/20.
+//  Created by Austin Goetz on 10/19/20.
 //
 
 import Foundation
 
 class Scorecard {
-    let player: String
-    let courseName: String
-    let totalStrokes: Int?
-    let coursePar: Int
-    let numberOfHoles: Int
-    let timestamp: Date
+    let player: User
+    let course: String
+    let par: Int
+    let holes: Int
     
-    init(player: String, courseName: String, totalStrokes: Int?, coursePar: Int, numberOfHoles: Int = 18, timestamp: Date = Date()) {
+    init(player: User, course: String, par: Int, holes: Int = 18) {
         self.player = player
-        self.courseName = courseName
-        self.totalStrokes = totalStrokes
-        self.coursePar = coursePar
-        self.numberOfHoles = numberOfHoles
-        self.timestamp = timestamp
+        self.course = course
+        self.par = par
+        self.holes = holes
     }
 }
