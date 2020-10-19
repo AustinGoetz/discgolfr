@@ -20,6 +20,7 @@
 		2ADCFFF7253D672600D4A267 /* Scorecard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFFF6253D672600D4A267 /* Scorecard.swift */; };
 		2ADCFFFA253D6AE900D4A267 /* CreateScorecardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFFF9253D6AE900D4A267 /* CreateScorecardViewController.swift */; };
 		2ADCFFFD253D6E6D00D4A267 /* ScorecardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFFFC253D6E6D00D4A267 /* ScorecardController.swift */; };
+		2ADFA46B253DED9A00856C12 /* HoleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADFA46A253DED9A00856C12 /* HoleTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		2ADCFFF9253D6AE900D4A267 /* CreateScorecardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateScorecardViewController.swift; sourceTree = "<group>"; };
 		2ADCFFFC253D6E6D00D4A267 /* ScorecardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorecardController.swift; sourceTree = "<group>"; };
 		2ADCFFFF253D713E00D4A267 /* ScorecardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorecardTableViewController.swift; sourceTree = "<group>"; };
+		2ADFA46A253DED9A00856C12 /* HoleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoleTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				2ADCFFAE253D207C00D4A267 /* Storyboards */,
+				2ADFA469253DED4400856C12 /* CustomViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -142,6 +145,14 @@
 				2ADCFFFF253D713E00D4A267 /* ScorecardTableViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2ADFA469253DED4400856C12 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				2ADFA46A253DED9A00856C12 /* HoleTableViewCell.swift */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +229,7 @@
 				2ADCFF99253D1FA300D4A267 /* SceneDelegate.swift in Sources */,
 				2ADCFFE4253D4D1700D4A267 /* UserController.swift in Sources */,
 				2ADCFFFD253D6E6D00D4A267 /* ScorecardController.swift in Sources */,
+				2ADFA46B253DED9A00856C12 /* HoleTableViewCell.swift in Sources */,
 				2ADCFFF1253D61F000D4A267 /* LogInViewController.swift in Sources */,
 				2ADCFFE1253D4CD100D4A267 /* User.swift in Sources */,
 				2ADC0000253D713E00D4A267 /* ScorecardTableViewController.swift in Sources */,

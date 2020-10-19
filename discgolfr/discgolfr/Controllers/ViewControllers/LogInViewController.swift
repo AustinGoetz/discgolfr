@@ -23,8 +23,23 @@ class LogInViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
+    
+    // MARK: - Actions
+    @IBAction func signInButtonTapped(_ sender: Any) {
+        guard let name = usernameTextField.text, !name.isEmpty else { return }
+        let newUser = User(name: name)
+        
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let destinationVC = storyboard.instantiateViewController(withIdentifier: "homeViewController") as? HomeViewController else { return }
+        let navigationController = UINavigationController(rootViewController: destinationVC)
+        navigationController.modalPresentationStyle = .fullScreen
+        
+        destinationVC.userToReceive = newUser
+        
+        self.present(navigationController, animated: true, completion: nil)
+    }
+    
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

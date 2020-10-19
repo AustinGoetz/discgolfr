@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wi4-wf-bWL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UIh-K7-625">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
@@ -65,7 +65,7 @@
                                 <rect key="frame" x="228.5" y="551" width="165.5" height="30"/>
                                 <state key="normal" title="Sign In"/>
                                 <connections>
-                                    <segue destination="lOl-vu-Ueo" kind="show" identifier="toHomeVC" id="uey-9A-N5e"/>
+                                    <action selector="signInButtonTapped:" destination="UIh-K7-625" eventType="touchUpInside" id="9hj-CO-MyK"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QUW-g4-f4g">
@@ -115,12 +115,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DOi-I6-4vb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-213.04347826086959" y="-277.23214285714283"/>
+            <point key="canvasLocation" x="-681" y="-269"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="Ue5-Pb-Rck">
             <objects>
-                <viewController id="lOl-vu-Ueo" customClass="HomeViewController" customModule="discgolfr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeViewController" modalPresentationStyle="fullScreen" id="lOl-vu-Ueo" customClass="HomeViewController" customModule="discgolfr" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Di-Oe-Fcu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -157,7 +157,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O3z-dY-bSf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="547.82608695652175" y="-277.23214285714283"/>
+            <point key="canvasLocation" x="880" y="-269"/>
         </scene>
         <!--Create Scorecard View Controller-->
         <scene sceneID="T1d-G8-wMp">
@@ -190,24 +190,24 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Par" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNc-no-Vc5">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Holes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XrX-8f-T9l">
                                                 <rect key="frame" x="0.0" y="54.5" width="310.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter course par" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hed-y7-oBP">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter number of holes" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kun-Jj-mMM">
                                                 <rect key="frame" x="0.0" y="75" width="310.5" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Holes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XrX-8f-T9l">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Par" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNc-no-Vc5">
                                                 <rect key="frame" x="0.0" y="109" width="310.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter number of holes" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kun-Jj-mMM">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter course par" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hed-y7-oBP">
                                                 <rect key="frame" x="0.0" y="129.5" width="310.5" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -237,13 +237,13 @@
                     <connections>
                         <outlet property="courseNameTextField" destination="AGL-Y8-qWY" id="RxC-ls-Uhm"/>
                         <outlet property="courseParTextField" destination="hed-y7-oBP" id="CDP-Rb-WfG"/>
-                        <outlet property="holeNumberTextField" destination="Kun-Jj-mMM" id="Fks-3C-XXz"/>
+                        <outlet property="holesNumberTextField" destination="Kun-Jj-mMM" id="Fks-3C-XXz"/>
                         <outlet property="scorecardPlayerLabel" destination="Y4J-IK-PjG" id="gLa-7g-Baj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T6U-GC-Kc2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1352" y="-277"/>
+            <point key="canvasLocation" x="1680" y="-269"/>
         </scene>
         <!--Scorecard Table View Controller-->
         <scene sceneID="JpP-YY-vM4">
@@ -254,7 +254,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="119" id="Szs-Cq-pNi">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="holeCell" rowHeight="119" id="Szs-Cq-pNi" customClass="HoleTableViewCell" customModule="discgolfr" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="119"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Szs-Cq-pNi" id="JhU-0h-chU">
@@ -298,6 +298,10 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="t3w-y4-Zyw" secondAttribute="trailing" constant="20" id="gi3-U7-qEw"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="holeLabel" destination="Pnn-OP-Hzr" id="6xV-SY-iUh"/>
+                                    <outlet property="scoreLabel" destination="y7z-wa-JNw" id="MWu-iq-Rpo"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -308,25 +312,26 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EqI-4I-MZ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2089.8550724637685" y="-277.23214285714283"/>
+            <point key="canvasLocation" x="2500" y="-269"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="urQ-m9-Vum">
+        <scene sceneID="gpk-0s-SuN">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wi4-wf-bWL" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="homeNavigationController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="oc3-YD-Jpj" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ctO-6L-DGi">
+                    <navigationItem key="navigationItem" id="AZJ-RC-QgX"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Gvh-WP-tBq">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="UIh-K7-625" kind="relationship" relationship="rootViewController" id="TfZ-Kx-DB7"/>
+                        <segue destination="lOl-vu-Ueo" kind="relationship" relationship="rootViewController" id="DKI-bM-lXH"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kZW-Uw-AIG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7P5-qM-ILa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-978.26086956521749" y="-277.23214285714283"/>
+            <point key="canvasLocation" x="126" y="-269"/>
         </scene>
     </scenes>
     <resources>

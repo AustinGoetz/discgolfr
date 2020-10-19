@@ -17,8 +17,8 @@ class ScorecardController {
     
     // MARK: - CRUD
     // Create
-    func createScorecardWith(player: User, course: String, par: Int, completion: @escaping (Scorecard) -> Void) {
-        let newScorecard = Scorecard(player: player, course: course, par: par)
+    func createScorecardWith(player: User, course: String, par: Int, holes: [Int], completion: @escaping (Scorecard) -> Void) {
+        let newScorecard = Scorecard(player: player, course: course, par: par, holes: holes)
         
         scorecards.append(newScorecard)
     }
