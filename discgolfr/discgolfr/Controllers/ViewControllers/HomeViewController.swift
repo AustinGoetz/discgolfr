@@ -27,14 +27,15 @@ class HomeViewController: UIViewController {
         nameLabel.text = user.name
     }
     
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        // IIDOO
+        // I: Identifier
+        if segue.identifier == "toCreateScorecardVC" {
+            // D: Destination
+            guard let destinationVC = segue.destination as? CreateScorecardViewController else { return }
+            // O: receive Object
+            destinationVC.user = self.userToReceive
+        }
     }
-    */
-
 }

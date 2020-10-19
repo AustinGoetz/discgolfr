@@ -140,6 +140,9 @@
                                 <rect key="frame" x="147" y="783" width="120" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Create Scorecard"/>
+                                <connections>
+                                    <segue destination="8fz-qi-yA4" kind="show" identifier="toCreateScorecardVC" id="LJt-n2-J5C"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fsc-zW-K6H"/>
@@ -155,6 +158,157 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O3z-dY-bSf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="547.82608695652175" y="-277.23214285714283"/>
+        </scene>
+        <!--Create Scorecard View Controller-->
+        <scene sceneID="T1d-G8-wMp">
+            <objects>
+                <viewController id="8fz-qi-yA4" customClass="CreateScorecardViewController" customModule="discgolfr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XSX-p0-Ov7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="tVs-Pa-t9H">
+                                <rect key="frame" x="52" y="269" width="310.5" height="358"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scorecard for (username)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4J-IK-PjG">
+                                        <rect key="frame" x="0.0" y="0.0" width="310.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ay2-Pe-OLS">
+                                        <rect key="frame" x="0.0" y="68.5" width="310.5" height="163.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yj6-AX-gt0">
+                                                <rect key="frame" x="0.0" y="0.0" width="310.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter course name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AGL-Y8-qWY">
+                                                <rect key="frame" x="0.0" y="20.5" width="310.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Par" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNc-no-Vc5">
+                                                <rect key="frame" x="0.0" y="54.5" width="310.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter course par" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hed-y7-oBP">
+                                                <rect key="frame" x="0.0" y="75" width="310.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Holes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XrX-8f-T9l">
+                                                <rect key="frame" x="0.0" y="109" width="310.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter number of holes" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kun-Jj-mMM">
+                                                <rect key="frame" x="0.0" y="129.5" width="310.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="200" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVY-Zx-kW7">
+                                        <rect key="frame" x="0.0" y="280" width="310.5" height="78"/>
+                                        <state key="normal" title="Start Round"/>
+                                        <connections>
+                                            <action selector="startRoundButtonTapped:" destination="8fz-qi-yA4" eventType="touchUpInside" id="zRF-aR-Ta5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TuE-TQ-CU9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tVs-Pa-t9H" firstAttribute="width" secondItem="XSX-p0-Ov7" secondAttribute="width" multiplier="0.75" id="Iho-Zu-31K"/>
+                            <constraint firstItem="tVs-Pa-t9H" firstAttribute="height" secondItem="XSX-p0-Ov7" secondAttribute="height" multiplier="0.4" id="L7j-p8-sbO"/>
+                            <constraint firstItem="tVs-Pa-t9H" firstAttribute="centerY" secondItem="XSX-p0-Ov7" secondAttribute="centerY" id="hQ4-0b-ZMV"/>
+                            <constraint firstItem="tVs-Pa-t9H" firstAttribute="centerX" secondItem="XSX-p0-Ov7" secondAttribute="centerX" id="pXP-Yb-4C0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZY5-vf-1oO"/>
+                    <connections>
+                        <outlet property="courseNameTextField" destination="AGL-Y8-qWY" id="RxC-ls-Uhm"/>
+                        <outlet property="courseParTextField" destination="hed-y7-oBP" id="CDP-Rb-WfG"/>
+                        <outlet property="holeNumberTextField" destination="Kun-Jj-mMM" id="Fks-3C-XXz"/>
+                        <outlet property="scorecardPlayerLabel" destination="Y4J-IK-PjG" id="gLa-7g-Baj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T6U-GC-Kc2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1352" y="-277"/>
+        </scene>
+        <!--Scorecard Table View Controller-->
+        <scene sceneID="JpP-YY-vM4">
+            <objects>
+                <tableViewController storyboardIdentifier="scorecardTableVC" id="F2b-Rc-1Kq" customClass="ScorecardTableViewController" customModule="discgolfr" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="4Kh-AL-oFd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="119" id="Szs-Cq-pNi">
+                                <rect key="frame" x="0.0" y="28" width="414" height="119"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Szs-Cq-pNi" id="JhU-0h-chU">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="119"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hole 18" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pnn-OP-Hzr">
+                                            <rect key="frame" x="28" y="39" width="112" height="41"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="t3w-y4-Zyw">
+                                            <rect key="frame" x="306" y="29.5" width="68" height="60"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7z-wa-JNw">
+                                                    <rect key="frame" x="0.0" y="0.0" width="21" height="60"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pMA-tu-0rc">
+                                                    <rect key="frame" x="29" y="0.0" width="39" height="60"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YcY-fz-1y3">
+                                                            <rect key="frame" x="0.0" y="0.0" width="39" height="30"/>
+                                                            <state key="normal" title="Up"/>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1B-GX-LcR">
+                                                            <rect key="frame" x="0.0" y="30" width="39" height="30"/>
+                                                            <state key="normal" title="Down"/>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="t3w-y4-Zyw" firstAttribute="centerY" secondItem="JhU-0h-chU" secondAttribute="centerY" id="Nal-sL-akh"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="t3w-y4-Zyw" secondAttribute="trailing" constant="20" id="gi3-U7-qEw"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="F2b-Rc-1Kq" id="VUM-D0-r0x"/>
+                            <outlet property="delegate" destination="F2b-Rc-1Kq" id="J99-Hi-ZTX"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EqI-4I-MZ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2089.8550724637685" y="-277.23214285714283"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="urQ-m9-Vum">

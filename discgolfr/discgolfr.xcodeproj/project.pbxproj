@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2ADC0000253D713E00D4A267 /* ScorecardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFFFF253D713E00D4A267 /* ScorecardTableViewController.swift */; };
 		2ADCFF97253D1FA300D4A267 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFF96253D1FA300D4A267 /* AppDelegate.swift */; };
 		2ADCFF99253D1FA300D4A267 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFF98253D1FA300D4A267 /* SceneDelegate.swift */; };
 		2ADCFF9E253D1FA300D4A267 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ADCFF9C253D1FA300D4A267 /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 		2ADCFFF1253D61F000D4A267 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFFF0253D61EF00D4A267 /* LogInViewController.swift */; };
 		2ADCFFF4253D63F500D4A267 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFFF3253D63F500D4A267 /* HomeViewController.swift */; };
 		2ADCFFF7253D672600D4A267 /* Scorecard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFFF6253D672600D4A267 /* Scorecard.swift */; };
+		2ADCFFFA253D6AE900D4A267 /* CreateScorecardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFFF9253D6AE900D4A267 /* CreateScorecardViewController.swift */; };
+		2ADCFFFD253D6E6D00D4A267 /* ScorecardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFFFC253D6E6D00D4A267 /* ScorecardController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		2ADCFFF0253D61EF00D4A267 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		2ADCFFF3253D63F500D4A267 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2ADCFFF6253D672600D4A267 /* Scorecard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scorecard.swift; sourceTree = "<group>"; };
+		2ADCFFF9253D6AE900D4A267 /* CreateScorecardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateScorecardViewController.swift; sourceTree = "<group>"; };
+		2ADCFFFC253D6E6D00D4A267 /* ScorecardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorecardController.swift; sourceTree = "<group>"; };
+		2ADCFFFF253D713E00D4A267 /* ScorecardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorecardTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				2ADCFFE3253D4D1700D4A267 /* UserController.swift */,
+				2ADCFFFC253D6E6D00D4A267 /* ScorecardController.swift */,
 			);
 			path = ModelControllers;
 			sourceTree = "<group>";
@@ -131,6 +138,8 @@
 			children = (
 				2ADCFFF0253D61EF00D4A267 /* LogInViewController.swift */,
 				2ADCFFF3253D63F500D4A267 /* HomeViewController.swift */,
+				2ADCFFF9253D6AE900D4A267 /* CreateScorecardViewController.swift */,
+				2ADCFFFF253D713E00D4A267 /* ScorecardTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -208,10 +217,13 @@
 				2ADCFF97253D1FA300D4A267 /* AppDelegate.swift in Sources */,
 				2ADCFF99253D1FA300D4A267 /* SceneDelegate.swift in Sources */,
 				2ADCFFE4253D4D1700D4A267 /* UserController.swift in Sources */,
+				2ADCFFFD253D6E6D00D4A267 /* ScorecardController.swift in Sources */,
 				2ADCFFF1253D61F000D4A267 /* LogInViewController.swift in Sources */,
 				2ADCFFE1253D4CD100D4A267 /* User.swift in Sources */,
+				2ADC0000253D713E00D4A267 /* ScorecardTableViewController.swift in Sources */,
 				2ADCFFF4253D63F500D4A267 /* HomeViewController.swift in Sources */,
 				2ADCFFF7253D672600D4A267 /* Scorecard.swift in Sources */,
+				2ADCFFFA253D6AE900D4A267 /* CreateScorecardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

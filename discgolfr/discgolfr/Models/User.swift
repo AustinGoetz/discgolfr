@@ -11,7 +11,7 @@ class User {
     let name: String
     var scorecards: [Scorecard]
     
-    init(name: String, scorecards: [Scorecard]) {
+    init(name: String, scorecards: [Scorecard] = []) {
         self.name = name
         self.scorecards = scorecards
     }
