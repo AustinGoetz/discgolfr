@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2ADCFF97253D1FA300D4A267 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFF96253D1FA300D4A267 /* AppDelegate.swift */; };
 		2ADCFF99253D1FA300D4A267 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFF98253D1FA300D4A267 /* SceneDelegate.swift */; };
-		2ADCFF9B253D1FA300D4A267 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFF9A253D1FA300D4A267 /* ViewController.swift */; };
 		2ADCFF9E253D1FA300D4A267 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ADCFF9C253D1FA300D4A267 /* Main.storyboard */; };
 		2ADCFFA0253D1FA600D4A267 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADCFF9F253D1FA600D4A267 /* Assets.xcassets */; };
 		2ADCFFA3253D1FA600D4A267 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ADCFFA1253D1FA600D4A267 /* LaunchScreen.storyboard */; };
@@ -19,7 +18,6 @@
 		2ADCFF93253D1FA300D4A267 /* discgolfr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = discgolfr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADCFF96253D1FA300D4A267 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2ADCFF98253D1FA300D4A267 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2ADCFF9A253D1FA300D4A267 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2ADCFF9D253D1FA300D4A267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2ADCFF9F253D1FA600D4A267 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2ADCFFA2253D1FA600D4A267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +54,38 @@
 		2ADCFF95253D1FA300D4A267 /* discgolfr */ = {
 			isa = PBXGroup;
 			children = (
+				2ADCFFAD253D207800D4A267 /* Views */,
+				2ADCFFAB253D206D00D4A267 /* Resources */,
+			);
+			path = discgolfr;
+			sourceTree = "<group>";
+		};
+		2ADCFFAB253D206D00D4A267 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				2ADCFF96253D1FA300D4A267 /* AppDelegate.swift */,
 				2ADCFF98253D1FA300D4A267 /* SceneDelegate.swift */,
-				2ADCFF9A253D1FA300D4A267 /* ViewController.swift */,
-				2ADCFF9C253D1FA300D4A267 /* Main.storyboard */,
 				2ADCFF9F253D1FA600D4A267 /* Assets.xcassets */,
 				2ADCFFA1253D1FA600D4A267 /* LaunchScreen.storyboard */,
 				2ADCFFA4253D1FA600D4A267 /* Info.plist */,
 			);
-			path = discgolfr;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2ADCFFAD253D207800D4A267 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2ADCFFAE253D207C00D4A267 /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2ADCFFAE253D207C00D4A267 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2ADCFF9C253D1FA300D4A267 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +158,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2ADCFF9B253D1FA300D4A267 /* ViewController.swift in Sources */,
 				2ADCFF97253D1FA300D4A267 /* AppDelegate.swift in Sources */,
 				2ADCFF99253D1FA300D4A267 /* SceneDelegate.swift in Sources */,
 			);
@@ -288,7 +308,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G359J97949;
-				INFOPLIST_FILE = discgolfr/Info.plist;
+				INFOPLIST_FILE = discgolfr/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +327,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G359J97949;
-				INFOPLIST_FILE = discgolfr/Info.plist;
+				INFOPLIST_FILE = discgolfr/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
