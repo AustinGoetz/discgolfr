@@ -10,13 +10,13 @@
         <!--Scorecards-->
         <scene sceneID="Ccd-Ck-Ozh">
             <objects>
-                <tableViewController id="kag-qg-uXE" sceneMemberID="viewController">
+                <tableViewController id="kag-qg-uXE" customClass="ScorecardListTableViewController" customModule="discgolfr" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jXh-wg-nnD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="0nh-VC-Lxf" detailTextLabel="PHM-hR-xFy" style="IBUITableViewCellStyleSubtitle" id="ThJ-bV-0Cb">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="scorecardCell" textLabel="0nh-VC-Lxf" detailTextLabel="PHM-hR-xFy" style="IBUITableViewCellStyleSubtitle" id="ThJ-bV-0Cb">
                                 <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ThJ-bV-0Cb" id="wMC-H3-IDy">
@@ -39,6 +39,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="sWG-4f-Rq8" kind="show" identifier="toEditScorecard" id="gft-qC-QI7"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -58,10 +61,10 @@
             </objects>
             <point key="canvasLocation" x="-555" y="-342"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Start Round Table View Controller-->
         <scene sceneID="2bN-jk-D9R">
             <objects>
-                <tableViewController id="sWG-4f-Rq8" sceneMemberID="viewController">
+                <tableViewController id="sWG-4f-Rq8" customClass="StartRoundTableViewController" customModule="discgolfr" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="ATe-LR-Y9b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -175,6 +178,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="jK4-Ga-wzZ"/>
+                    <connections>
+                        <outlet property="courseNameTextField" destination="jst-QS-hE5" id="OC5-3l-xrx"/>
+                        <outlet property="courseParTextField" destination="o1C-6Y-4NK" id="pBH-dj-dFc"/>
+                        <outlet property="playerNameTextField" destination="T3e-Ad-C7N" id="cNR-4F-FNT"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="giY-4G-2I1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -266,6 +274,9 @@
             <point key="canvasLocation" x="-1378" y="-342"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="gft-qC-QI7"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

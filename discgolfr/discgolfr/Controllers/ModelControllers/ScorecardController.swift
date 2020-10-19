@@ -16,8 +16,8 @@ class ScorecardController {
     
     // MARK: - CRUD
     /// Create
-    func createScorecardWith(player: String, courseName: String?, coursePar: Int?) {
-        let newScorecard = Scorecard(playerName: player, courseName: courseName, coursePar: coursePar)
+    func createScorecardWith(player: String, courseName: String, coursePar: Int) {
+        let newScorecard = Scorecard(player: player, courseName: courseName, totalStrokes: 0, coursePar: coursePar)
         scorecards.append(newScorecard)
     }
 }
