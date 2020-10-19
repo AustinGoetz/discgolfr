@@ -13,6 +13,7 @@
 		2ADCFFA0253D1FA600D4A267 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADCFF9F253D1FA600D4A267 /* Assets.xcassets */; };
 		2ADCFFA3253D1FA600D4A267 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ADCFFA1253D1FA600D4A267 /* LaunchScreen.storyboard */; };
 		2ADCFFB3253D289800D4A267 /* Scorecard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFFB2253D289800D4A267 /* Scorecard.swift */; };
+		2ADCFFB9253D299900D4A267 /* ScorecardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFFB8253D299900D4A267 /* ScorecardController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2ADCFFA2253D1FA600D4A267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2ADCFFA4253D1FA600D4A267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2ADCFFB2253D289800D4A267 /* Scorecard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scorecard.swift; sourceTree = "<group>"; };
+		2ADCFFB8253D299900D4A267 /* ScorecardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorecardController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				2ADCFFB1253D287C00D4A267 /* Models */,
 				2ADCFFAD253D207800D4A267 /* Views */,
+				2ADCFFB6253D298000D4A267 /* Controllers */,
 				2ADCFFAB253D206D00D4A267 /* Resources */,
 			);
 			path = discgolfr;
@@ -97,6 +100,22 @@
 				2ADCFFB2253D289800D4A267 /* Scorecard.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		2ADCFFB6253D298000D4A267 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2ADCFFB7253D298300D4A267 /* ModelControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2ADCFFB7253D298300D4A267 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2ADCFFB8253D299900D4A267 /* ScorecardController.swift */,
+			);
+			path = ModelControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +190,7 @@
 			files = (
 				2ADCFFB3253D289800D4A267 /* Scorecard.swift in Sources */,
 				2ADCFF97253D1FA300D4A267 /* AppDelegate.swift in Sources */,
+				2ADCFFB9253D299900D4A267 /* ScorecardController.swift in Sources */,
 				2ADCFF99253D1FA300D4A267 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
