@@ -16,8 +16,8 @@ class UserController {
     
     // MARK: - CRUD
     // Create
-    func createUserWith(name: String) {
-        let newUser = User(name: name)
+    func createUserWith(username: String, password: String, profilePhoto: UIImage?) {
+        let newUser = User(username: username, password: password, profilePhoto: profilePhoto)
         self.user = newUser
     }
 }

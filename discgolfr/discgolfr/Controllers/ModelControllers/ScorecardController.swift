@@ -10,16 +10,15 @@ import Foundation
 class ScorecardController {
     
     // MARK: - Properties
-    /// Shared Instance
+    /// Shared Instance/Singleton
     static let shared = ScorecardController()
     /// Source of Truth
     var scorecards: [Scorecard] = []
     
     // MARK: - CRUD
     // Create
-    func createScorecardWith(player: User, course: String, par: Int, holes: [Int], completion: @escaping (Scorecard) -> Void) {
-        let newScorecard = Scorecard(player: player, course: course, par: par, holes: holes)
-        
+    func createScorecardWith(strokes: Int, course: String, coursePar: Int, numberOfHoles: Int) {
+        let newScorecard = Scorecard(strokes: strokes, course: course, coursePar: coursePar, numberOfHoles: numberOfHoles)
         scorecards.append(newScorecard)
     }
 }

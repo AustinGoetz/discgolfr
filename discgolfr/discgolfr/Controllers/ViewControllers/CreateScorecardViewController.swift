@@ -10,55 +10,28 @@ import UIKit
 class CreateScorecardViewController: UIViewController {
     
     // MARK: - Outlets
-    @IBOutlet weak var scorecardPlayerLabel: UILabel!
     @IBOutlet weak var courseNameTextField: UITextField!
     @IBOutlet weak var courseParTextField: UITextField!
-    @IBOutlet weak var holesNumberTextField: UITextField!
+    @IBOutlet weak var numberOfHolesTextField: UITextField!
+    @IBOutlet weak var totalStrokesTextField: UITextField!
     
-    // MARK: - Properties
-    /// Landing Pad
-    var user: User?
-    var scorecard: Scorecard?
-    
-    // MARK: - Lifecycle Methods
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        updateViews()
     }
     
     // MARK: - Actions
-    @IBAction func startRoundButtonTapped(_ sender: Any) {
-        guard let user = user,
-              let courseName = courseNameTextField.text, !courseName.isEmpty,
+    @IBAction func finishRoundButtonTapped(_ sender: Any) {
+        guard let course = courseNameTextField.text, !course.isEmpty,
               let coursePar = courseParTextField.text, !coursePar.isEmpty,
-              let holesAsString = holesNumberTextField.text, !holesAsString.isEmpty else { return }
-        guard let holesAsInt = Int(holesAsString),
-              let courseParAsInt = Int(coursePar) else { return }
-        var numberOfHoles: [Int] = []
-        for hole in 1...holesAsInt {
-            numberOfHoles.insert(hole, at: 0)
-        }
+              let numberOfHoles = numberOfHolesTextField.text, !numberOfHoles.isEmpty,
+              let strokes = totalStrokesTextField.text, !strokes.isEmpty else { return }
+        let strokesAsInt = Int(strokes) ?? 0
+        let courseParAsInt = Int(coursePar) ?? 0
+        let numberOfHolesAsInt = Int(numberOfHoles) ?? 0
         
-        ScorecardController.shared.createScorecardWith(player: user, course: courseName, par: courseParAsInt, holes: numberOfHoles) { (scorecard) in
-            self.scorecard = scorecard
-        }
-        
-        
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        guard let destinationVC = storyBoard.instantiateViewController(withIdentifier: "scorecardTableVC") as? ScorecardTableViewController else { return }
-        destinationVC.modalPresentationStyle = .fullScreen
-        
-        destinationVC.scorecard = self.scorecard
-        
-        self.present(destinationVC, animated:true, completion:nil)
-    }
-    
-    
-    // MARK: - Class Functions
-    func updateViews() {
-        guard let user = user else { return }
-        scorecardPlayerLabel.text = "Scorecard for \(user.name)"
+        ScorecardController.shared.createScorecardWith(strokes: strokesAsInt, course: course, coursePar: courseParAsInt, numberOfHoles: numberOfHolesAsInt)
+        navigationController?.popViewController(animated: true)
     }
     
 

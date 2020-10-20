@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2ADC0000253D713E00D4A267 /* ScorecardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFFFF253D713E00D4A267 /* ScorecardTableViewController.swift */; };
 		2ADCFF97253D1FA300D4A267 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFF96253D1FA300D4A267 /* AppDelegate.swift */; };
 		2ADCFF99253D1FA300D4A267 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFF98253D1FA300D4A267 /* SceneDelegate.swift */; };
 		2ADCFF9E253D1FA300D4A267 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ADCFF9C253D1FA300D4A267 /* Main.storyboard */; };
@@ -15,12 +14,13 @@
 		2ADCFFA3253D1FA600D4A267 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ADCFFA1253D1FA600D4A267 /* LaunchScreen.storyboard */; };
 		2ADCFFE1253D4CD100D4A267 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFFE0253D4CD100D4A267 /* User.swift */; };
 		2ADCFFE4253D4D1700D4A267 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFFE3253D4D1700D4A267 /* UserController.swift */; };
-		2ADCFFF1253D61F000D4A267 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFFF0253D61EF00D4A267 /* LogInViewController.swift */; };
-		2ADCFFF4253D63F500D4A267 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFFF3253D63F500D4A267 /* HomeViewController.swift */; };
-		2ADCFFF7253D672600D4A267 /* Scorecard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFFF6253D672600D4A267 /* Scorecard.swift */; };
-		2ADCFFFA253D6AE900D4A267 /* CreateScorecardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFFF9253D6AE900D4A267 /* CreateScorecardViewController.swift */; };
-		2ADCFFFD253D6E6D00D4A267 /* ScorecardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCFFFC253D6E6D00D4A267 /* ScorecardController.swift */; };
-		2ADFA46B253DED9A00856C12 /* HoleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADFA46A253DED9A00856C12 /* HoleTableViewCell.swift */; };
+		2ADFA47C253E174600856C12 /* PhotoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADFA47B253E174600856C12 /* PhotoPickerViewController.swift */; };
+		2ADFA4B2253E60FC00856C12 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADFA4B1253E60FC00856C12 /* LogInViewController.swift */; };
+		2ADFA4B6253E737C00856C12 /* ScorecardListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADFA4B5253E737C00856C12 /* ScorecardListTableViewController.swift */; };
+		2ADFA4B9253E741900856C12 /* Scorecard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADFA4B8253E741900856C12 /* Scorecard.swift */; };
+		2ADFA4BC253E75AE00856C12 /* ScorecardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADFA4BB253E75AE00856C12 /* ScorecardController.swift */; };
+		2ADFA4C1253E7BE500856C12 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADFA4C0253E7BE500856C12 /* DateExtension.swift */; };
+		2ADFA4C4253E7CA700856C12 /* CreateScorecardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADFA4C3253E7CA700856C12 /* CreateScorecardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,13 +33,13 @@
 		2ADCFFA4253D1FA600D4A267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2ADCFFE0253D4CD100D4A267 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2ADCFFE3253D4D1700D4A267 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
-		2ADCFFF0253D61EF00D4A267 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
-		2ADCFFF3253D63F500D4A267 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		2ADCFFF6253D672600D4A267 /* Scorecard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scorecard.swift; sourceTree = "<group>"; };
-		2ADCFFF9253D6AE900D4A267 /* CreateScorecardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateScorecardViewController.swift; sourceTree = "<group>"; };
-		2ADCFFFC253D6E6D00D4A267 /* ScorecardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorecardController.swift; sourceTree = "<group>"; };
-		2ADCFFFF253D713E00D4A267 /* ScorecardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorecardTableViewController.swift; sourceTree = "<group>"; };
-		2ADFA46A253DED9A00856C12 /* HoleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoleTableViewCell.swift; sourceTree = "<group>"; };
+		2ADFA47B253E174600856C12 /* PhotoPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerViewController.swift; sourceTree = "<group>"; };
+		2ADFA4B1253E60FC00856C12 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		2ADFA4B5253E737C00856C12 /* ScorecardListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorecardListTableViewController.swift; sourceTree = "<group>"; };
+		2ADFA4B8253E741900856C12 /* Scorecard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scorecard.swift; sourceTree = "<group>"; };
+		2ADFA4BB253E75AE00856C12 /* ScorecardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorecardController.swift; sourceTree = "<group>"; };
+		2ADFA4C0253E7BE500856C12 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		2ADFA4C3253E7CA700856C12 /* CreateScorecardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateScorecardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +75,7 @@
 				2ADCFFB1253D287C00D4A267 /* Models */,
 				2ADCFFAD253D207800D4A267 /* Views */,
 				2ADCFFB6253D298000D4A267 /* Controllers */,
+				2ADFA4BF253E7BD800856C12 /* HelpersAndExtensions */,
 				2ADCFFAB253D206D00D4A267 /* Resources */,
 			);
 			path = discgolfr;
@@ -96,7 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				2ADCFFAE253D207C00D4A267 /* Storyboards */,
-				2ADFA469253DED4400856C12 /* CustomViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -113,7 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				2ADCFFE0253D4CD100D4A267 /* User.swift */,
-				2ADCFFF6253D672600D4A267 /* Scorecard.swift */,
+				2ADFA4B8253E741900856C12 /* Scorecard.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -131,7 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				2ADCFFE3253D4D1700D4A267 /* UserController.swift */,
-				2ADCFFFC253D6E6D00D4A267 /* ScorecardController.swift */,
+				2ADFA4BB253E75AE00856C12 /* ScorecardController.swift */,
 			);
 			path = ModelControllers;
 			sourceTree = "<group>";
@@ -139,20 +139,20 @@
 		2ADCFFBB253D2ABA00D4A267 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				2ADCFFF0253D61EF00D4A267 /* LogInViewController.swift */,
-				2ADCFFF3253D63F500D4A267 /* HomeViewController.swift */,
-				2ADCFFF9253D6AE900D4A267 /* CreateScorecardViewController.swift */,
-				2ADCFFFF253D713E00D4A267 /* ScorecardTableViewController.swift */,
+				2ADFA4B1253E60FC00856C12 /* LogInViewController.swift */,
+				2ADFA47B253E174600856C12 /* PhotoPickerViewController.swift */,
+				2ADFA4B5253E737C00856C12 /* ScorecardListTableViewController.swift */,
+				2ADFA4C3253E7CA700856C12 /* CreateScorecardViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		2ADFA469253DED4400856C12 /* CustomViews */ = {
+		2ADFA4BF253E7BD800856C12 /* HelpersAndExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				2ADFA46A253DED9A00856C12 /* HoleTableViewCell.swift */,
+				2ADFA4C0253E7BE500856C12 /* DateExtension.swift */,
 			);
-			path = CustomViews;
+			path = HelpersAndExtensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,17 +225,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ADFA4B9253E741900856C12 /* Scorecard.swift in Sources */,
+				2ADFA4C1253E7BE500856C12 /* DateExtension.swift in Sources */,
+				2ADFA47C253E174600856C12 /* PhotoPickerViewController.swift in Sources */,
 				2ADCFF97253D1FA300D4A267 /* AppDelegate.swift in Sources */,
+				2ADFA4BC253E75AE00856C12 /* ScorecardController.swift in Sources */,
+				2ADFA4C4253E7CA700856C12 /* CreateScorecardViewController.swift in Sources */,
+				2ADFA4B6253E737C00856C12 /* ScorecardListTableViewController.swift in Sources */,
+				2ADFA4B2253E60FC00856C12 /* LogInViewController.swift in Sources */,
 				2ADCFF99253D1FA300D4A267 /* SceneDelegate.swift in Sources */,
 				2ADCFFE4253D4D1700D4A267 /* UserController.swift in Sources */,
-				2ADCFFFD253D6E6D00D4A267 /* ScorecardController.swift in Sources */,
-				2ADFA46B253DED9A00856C12 /* HoleTableViewCell.swift in Sources */,
-				2ADCFFF1253D61F000D4A267 /* LogInViewController.swift in Sources */,
 				2ADCFFE1253D4CD100D4A267 /* User.swift in Sources */,
-				2ADC0000253D713E00D4A267 /* ScorecardTableViewController.swift in Sources */,
-				2ADCFFF4253D63F500D4A267 /* HomeViewController.swift in Sources */,
-				2ADCFFF7253D672600D4A267 /* Scorecard.swift in Sources */,
-				2ADCFFFA253D6AE900D4A267 /* CreateScorecardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

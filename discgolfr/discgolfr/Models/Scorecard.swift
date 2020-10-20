@@ -8,15 +8,17 @@
 import Foundation
 
 class Scorecard {
-    let player: User
+    var strokes: Int
     let course: String
-    let par: Int
-    let holes: [Int]
+    let coursePar: Int
+    let numberOfHoles: Int
+    let timestamp: Date
     
-    init(player: User, course: String, par: Int, holes: [Int]) {
-        self.player = player
+    init(strokes: Int, course: String, coursePar: Int, numberOfHoles: Int, timestamp: Date = Date()) {
+        self.strokes = strokes
         self.course = course
-        self.par = par
-        self.holes = holes
+        self.coursePar = coursePar
+        self.numberOfHoles = numberOfHoles
+        self.timestamp = timestamp
     }
 }
